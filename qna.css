@@ -1,0 +1,173 @@
+/* General body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1a1a2e; /* Dark blue background */
+    color: #fff; /* White text */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Header styling */
+header {
+    width: 100%;
+    background-color: #16213e; /* Dark blue header background */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    padding: 1rem 0;
+    margin-left: 0px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    height: 40px;
+    border-radius: 30px;
+}
+
+#head {
+    font-size: 40px;
+    padding: 5px;  
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #e94560; 
+    animation: pulse 1.5s infinite;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+nav ul li {
+    margin-left: 1.5rem;
+    
+
+}
+
+nav ul li a {
+    color: #fff; 
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+    text-align: right;
+}
+
+nav ul li a:hover {
+    color: #e94560; /* Hover color */
+}
+
+/* Main container styling */
+.container {
+    background-color: #16213e; /* Dark blue background */
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    padding: 2rem;
+    width: 100%;
+    max-width: 800px;
+    margin: 20px;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: #e94560; /* Pinkish-red color */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 0.5rem;
+}
+
+textarea {
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    resize: vertical;
+    min-height: 100px;
+    font-size: 1rem;
+    background-color: #25304d;
+    color: #fff;
+}
+
+textarea:focus {
+    outline: none;
+    border-color: #e94560;
+    box-shadow: 0 0 0 2px rgba(233, 69, 96, 0.5);
+}
+
+button[type="submit"] {
+    background: linear-gradient(to right, #e94560, #0f3460);
+    color: #fff;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+button[type="submit"]:hover {
+    transform: scale(1.05);
+}
+
+button[type="submit"]:active {
+    transform: scale(0.95);
+}
+
+button[type="submit"]:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(233, 69, 96, 0.5);
+}
+
+#qnaContainer {
+    margin-top: 2rem;
+}
+
+.question {
+    background-color: #25304d;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.question p {
+    margin: 0;
+    color: #fff;
+}
+
+.answer {
+    background-color: #1f2947;
+    padding: 0.75rem;
+    border-radius: 3px;
+    margin-top: 0.5rem;
+}
+
+.answer p {
+    margin: 0;
+    color: #ccc;
+}
+
+@keyframes pulse {
+    0% {
+        text-shadow: 0 0 10px #e94560, 0 0 20px #e94560, 0 0 30px #e94560, 0 0 40px #e94560;
+    }
+    100% {
+        text-shadow: 0 0 20px #e94560, 0 0 30px #e94560, 0 0 40px #e94560, 0 0 50px #e94560;
+    }
+}
